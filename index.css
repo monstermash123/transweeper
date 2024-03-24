@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #d4b187;
+    --black-color: #020205;
+    --bg-color: #fff;
+    --border: .1rem solid rgba(255, 255, 255, 0.3);
+    --pink-color: #e84393;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 6%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+}
+
+.header .logo img {
+    height: 5rem;
+    margin-right: 1.5rem;
+}
+
+.header .navbar a{
+    color: #fff;
+    margin: 3rem;
+    font-size: 1.8rem;
+}
+
+.header .navbar a:hover {
+    color: #fff;
+    border-bottom: .1rem solid #eee;
+    padding-bottom: 0.5rem;
+    transition: 0.8s;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+
+.header .icons div:hover {
+    color: white;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+#menu_btn {
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    animation: fadeIn ease-in-out 1s;
+}
+
+.home .home_content {
+    max-width: 80rem;
+    padding: 3rem;
+    opacity: 0.9;
+    color: white;
+    background: var(--pink-color);
+}
+
+.home .home_content h3 {
+    font-size: 6rem;
+}
+
+.home .home_content span {
+    font-size: 4rem;
+    line-height: 0.8;
+}
+
+.home .home_content p {
+    font-size: 1.8rem;
+    line-height: 3;
+    font-weight: 900;
+}
+
+.ordering_btn {
+    display: inline-block;
+    margin-top: 0.2rem;
+    border-radius: 3rem;
+    background: #4e535c;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.ordering_btn:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.02);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    animation: fadeIn ease-in-out 1s;
+}
+
+.about_image img{
+    width: 90vh;
+    margin: 10rem;
+}
+
+.about_content h3{
+    font-size: 9rem;
+}
+
+.about_content h3 span {
+    color: seagreen;
+}
+
+.about_content p {
+    font-size: 2rem;
+    line-height: 3;
+}
+
+.about_content p span {
+    font-weight: 1000;
+}
+
+
+
